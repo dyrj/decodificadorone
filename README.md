@@ -29,7 +29,7 @@ Como Usar:
 
 Para utilizar o descodificador de texto, basta seguir os seguintes passos:
 
-1 - Acesse a página da aplicação clicando aqui.
+1 - Acesse a página da aplicação <a href="https://github.com/dyrj/decodificadorone">clicando aqui</a>
 2 - Insira o texto que deseja criptografar ou descriptografar no campo correspondente.
 3 - Selecione a opção de criptografia ou descriptografia.
 4 -Clique no botão "Criptografar" ou "Descriptografar", dependendo da opção selecionada.
