@@ -36,6 +36,8 @@ Para utilizar o descodificador de texto, basta seguir os seguintes passos:
 4 - O resultado da operação será exibido na caixa ao lado direito da tela.
 5 - Se desejar copiar o resultado para a área de transferência, clique no botão "Copiar".
 
+teste
+
 Tecnologias Utilizadas:
 
 HTML, CSS e JavaScript
