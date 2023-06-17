@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+*::-webkit-scrollbar-button {
+    display: none;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.563);
+}
+body {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+#main-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 94vh;
+}
+#data-input{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0 0 1rem;
+}
+#logo img{
+    width: 70%;
+}
+#input-textarea{
+    margin-left: 2.5rem;
+}
+#input-textarea textarea{
+    border: 1px solid transparent;
+    outline: none;
+    width: 80%;
+    height: 60vh;
+    color: black;
+    font-size: 2rem;
+    background-color: transparent;
+    resize: none;
+    caret-color: #fff;
+    border-radius: 14px;
+    padding: 5px;
+}
+#input-textarea textarea:focus{
+    border-color: #d8dfe86c;
+}
+#input-textarea textarea::placeholder{
+    font-size: 2rem;
+    color: #0A3871;
+}
+#buttons{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2.5rem;
+}
+.btn-general{
+    border: none;
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 24px;
+    background-color: #0A3871;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-general:hover{
+    box-shadow: 0px 0px 50px 1px #0A3871;
+}
+#btn-decrypt{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+#data-output{
+    display: flex;
+    align-items: center;
+}
+#section-output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+#section-output img{
+    width: 60%;
+    margin: 0 auto 3rem;
+}
+#section-output p{
+    width: 80%;
+    align-self: center;  
+    margin-top: .5rem;  
+}
+#text-result{
+    color: black;
+    width: 90%;
+    height: 85%;
+    text-align: start;
+    font-size: 1.5rem;
+    margin: 1rem auto 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+#btn-copy{
+    margin-top: 1rem;
+    align-self: center;
+}
+
+
+footer {
+    display: inline-block;
+    width: 100%;
+    padding: 5% 0;
+    background-color: #0A3871;
+}
+
+.texto-rodape {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.texto-rodape h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.icones-rodape {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+.icones-rodape a {
+    color: #D8DFE8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.icones-rodape a:hover {
+    color: black;
+    transition: 0.5;
+}
+
+.copyright {
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 1250px){
+    #main-content{
+        grid-template-columns: 60% 40%;
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-attachment: fixed;
+    }
+    #main-content{
+        grid-template-columns: 1fr;
+    }
+    #data-input{
+        gap: 50px;
+    }
+    #input-textarea{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #input-textarea textarea{
+        width: 100%;
+        height: 30vh;
+    }
+    #buttons{
+        margin: 0 auto;
+    }
+    #section-output{
+        margin-top: 2rem;
+        height: fit-content;
+        padding: 10px;
+    }
+    #section-output img{
+        display: none;
+    }
+    #btn-copy{
+        margin: 2.5rem 0 1rem;
+    }
+    footer{
+        font-size: 1.2rem;
+        margin: 2.5rem 0 0 0;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 650px){
+    #buttons{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px){
+    #buttons{
+        width: 80%;
+    }
+    .btn-general{
+        width: 100%;
+    }
+    #section-output{
+        margin-bottom: 1rem;
+    }
+}
